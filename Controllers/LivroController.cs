@@ -46,7 +46,6 @@ namespace Biblioteca.Controllers
         public IActionResult Edicao(int id)
         {
             Autenticacao.CheckLogin(this);
-            Autenticacao.CheckLogin(this);
             LivroService ls = new LivroService();
             Livro l = ls.ObterPorId(id);
             return View(l);
