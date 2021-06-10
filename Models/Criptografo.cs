@@ -1,9 +1,10 @@
+using System;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace Biblioteca.Models
 {
-    public class Criptografo
+    public static class Criptografo
     {
         public static string TextoCriptografado(string textoClaro)
         {

@@ -15,8 +15,8 @@
         @foreach (Usuario u in Model)
         {
             <tr>
-                <td>u.Nome</td>
-                <td>u.login</td>
+                <td>@u.Nome</td>
+                <td>@u.login</td>
                 @if (u.tipo==Usuario.ADMIN)
                 {
                     <td>Administrador</td>

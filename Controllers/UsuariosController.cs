@@ -41,6 +41,8 @@ namespace Biblioteca.Controllers
             novoUser.senha = Criptografo.TextoCriptografado(novoUser.senha);
 
             UsuarioService us = new UsuarioService();
+            us.incluirUsuario(novoUser);
+
             return RedirectToAction("cadastroRealizado");
         }
         public IActionResult ExcluirUsuario(int id)
